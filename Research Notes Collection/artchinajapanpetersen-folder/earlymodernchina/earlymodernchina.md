@@ -1,0 +1,50 @@
+End of the Qing (cheng) empire, western incursions established footholds in mainland, and Christian missionaries were causing uprisings in the countryside.
+- Boxer Rebellion - Exact numbers of deaths available.
+  - expats gathered in embassy, then other nations invaded to rescue them.
+  - Empire was nominally in favor of Rebellion, kicking out foreigners, but not overtly. Passive aggression.
+  - Western powers used opportunity to create difficulties for the Qing Empire.
+- Overthrown by more western-oriented nationalist government, wealth, powerful, merchant class, power hierarch under Emperor's court.
+- Effects of Boxer Rebellion were humiliating
+  - Denial about westernization
+  - nostalgic attempt to hold on to tradition, the past
+    - Popular prints - woodblocks that would be locally printed. Depicted current events, usually biased toward the local viewpoint. Denial
+    - nianbua - New Year's Prints were produced for centuries. 1890s lithography caused enormous job losses reaching the entire country.
+    - Different ideas about westernization (uniforms with bound feet, sporting rifles and acting like warriors)
+    - Beijing Opera golden age
+      - Mei Lanfang (1894-1961) - Male who performed traditional female character roles, then taught his daughter to do the roles, encouraging women to perform women's roles.
+      - Popular prints of actors performing stories
+        Arrest of the Orchid, Shen Manyun 1949. (sort of the program)
+    - Qi Baishi (1864-1957) - self-taught artist who in relatively unscathed artist from the era, one of the cultural giants of China. Energetic brushwork, color
+    - Xu Beihong (1895-1953) - Spent 8 years abroad, created horse painting style after western artistic influence.
+-1919 May 4th Movement
+    - The Shandong Problem
+      Communist Party
+      Nationalist Party - styled after Western democracies
+    - Chinese territory was given to Japan, thus leaving Chinese feeling humiliated and angry
+-Interwar years
+    - Storm Society (1931-1935)
+    - Pang Xunqin, -The Riddle of Life-, 1930
+    - Hu Yichuan, --To The Front-- 1932 Woodblack print
+    - European Expressionism
+      - Woodblock print revival
+        - Kathe Kollwitz (1867-1945)
+        - Frans Masareel (1889-1972)
+         - Socialist themes
+    - Woodblock prints had a long history as the working people's medium, so natural place to create art reflecting revolutionary atmosphere of the time, working class disaffection, struggle, poverty, frustration
+    - Feng Zikai (1898-1975), The dragonfly hovers above the jade hair clasp (1923-1925)
+      - manhua (from Manga (japan) which was from manhua (Chinese original) ) - Appealed to literary elite of Shanghai.
+- Second Sino-Japanese War (07/07/1937 - 02/09/1945)
+    - Zikai's manhua develop darker themes
+    - Japanese Occupation of Shanghai
+    - Liao Bingxiong (1915-2006), The Cat Kingdom (1946) put on display because he couldn't get printed. Depicted a corrupt cat government in power. dig at the nationalists.
+- The Long March (1934-35)
+  - Nationalists pushed Communists to far South
+  - Communists planned to head west into wilderness, evade nationalists and recamp far in the north. 6 to 8,000 miles long in a little more than a year. 90,000 reduced to 8,000
+   - Mao Xedong - organized long march. this was his rise to power. 40,000 member party at End
+    - Xedong used the failure as a kind of victory, Description of the Long March (1935), poetry, valor, purpose, value language.
+    - reality was totally opposite.
+    - Yenan Talks on Art and Literature, May 2, 1942, delivered by Mao during this time.
+     - "what we demand is the unity of politics and art, the unity of content and form, the unity of revolutionary political content and the highest possible perfection of artistic forms."
+     - Brother and Sister Open Wasteland, poster print.
+     - Exceptional Calligrapher, insisted on quality, symbol of message integrity.
+     - He knew the importance of style over substance.

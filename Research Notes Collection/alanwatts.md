@@ -14,3 +14,5 @@
    - Unity in Dualism
    - Ying and Yang
    Waves and Particles
+   - You are the Energy
+   - You are playing a game with yourself
