@@ -1,0 +1,1179 @@
+      <!DOCTYPE html>
+      <html>
+        <head>
+            <meta charset="utf-8" />
+            <title>CurrVitaU2D</title>
+            <style>.markdown-preview:not([data-use-github-style]) { padding: 2em; font-size: 1.2em; color: rgb(101, 123, 131); background-color: rgb(253, 246, 227); overflow: auto; }
+.markdown-preview:not([data-use-github-style]) > :first-child { margin-top: 0px; }
+.markdown-preview:not([data-use-github-style]) h1, .markdown-preview:not([data-use-github-style]) h2, .markdown-preview:not([data-use-github-style]) h3, .markdown-preview:not([data-use-github-style]) h4, .markdown-preview:not([data-use-github-style]) h5, .markdown-preview:not([data-use-github-style]) h6 { line-height: 1.2; margin-top: 1.5em; margin-bottom: 0.5em; color: rgb(30, 36, 39); }
+.markdown-preview:not([data-use-github-style]) h1 { font-size: 2.4em; font-weight: 300; }
+.markdown-preview:not([data-use-github-style]) h2 { font-size: 1.8em; font-weight: 400; }
+.markdown-preview:not([data-use-github-style]) h3 { font-size: 1.5em; font-weight: 500; }
+.markdown-preview:not([data-use-github-style]) h4 { font-size: 1.2em; font-weight: 600; }
+.markdown-preview:not([data-use-github-style]) h5 { font-size: 1.1em; font-weight: 600; }
+.markdown-preview:not([data-use-github-style]) h6 { font-size: 1em; font-weight: 600; }
+.markdown-preview:not([data-use-github-style]) strong { color: rgb(30, 36, 39); }
+.markdown-preview:not([data-use-github-style]) del { color: rgb(144, 163, 169); }
+.markdown-preview:not([data-use-github-style]) a, .markdown-preview:not([data-use-github-style]) a code { color: rgb(0, 43, 54); }
+.markdown-preview:not([data-use-github-style]) img { max-width: 100%; }
+.markdown-preview:not([data-use-github-style]) > p { margin-top: 0px; margin-bottom: 1.5em; }
+.markdown-preview:not([data-use-github-style]) > ul, .markdown-preview:not([data-use-github-style]) > ol { margin-bottom: 1.5em; }
+.markdown-preview:not([data-use-github-style]) blockquote { margin: 1.5em 0px; font-size: inherit; color: rgb(144, 163, 169); border-color: rgb(248, 222, 151); border-width: 4px; }
+.markdown-preview:not([data-use-github-style]) hr { margin: 3em 0px; border-top: 2px dashed rgb(248, 222, 151); background: none; }
+.markdown-preview:not([data-use-github-style]) table { margin: 1.5em 0px; }
+.markdown-preview:not([data-use-github-style]) th { color: rgb(30, 36, 39); }
+.markdown-preview:not([data-use-github-style]) th, .markdown-preview:not([data-use-github-style]) td { padding: 0.66em 1em; border: 1px solid rgb(248, 222, 151); }
+.markdown-preview:not([data-use-github-style]) code { color: rgb(30, 36, 39); background-color: rgb(251, 237, 198); }
+.markdown-preview:not([data-use-github-style]) pre.editor-colors { margin: 1.5em 0px; padding: 1em; font-size: 0.92em; border-radius: 3px; background-color: rgb(252, 240, 208); }
+.markdown-preview:not([data-use-github-style]) kbd { color: rgb(30, 36, 39); border-width: 1px 1px 2px; border-style: solid; border-color: rgb(248, 222, 151) rgb(248, 222, 151) rgb(246, 212, 122); border-image: initial; background-color: rgb(251, 237, 198); }
+.markdown-preview[data-use-github-style] { font-family: "Helvetica Neue", Helvetica, "Segoe UI", Arial, freesans, sans-serif; line-height: 1.6; overflow-wrap: break-word; padding: 30px; font-size: 16px; color: rgb(51, 51, 51); background-color: rgb(255, 255, 255); overflow: scroll; }
+.markdown-preview[data-use-github-style] > :first-child { margin-top: 0px !important; }
+.markdown-preview[data-use-github-style] > :last-child { margin-bottom: 0px !important; }
+.markdown-preview[data-use-github-style] a:not([href]) { color: inherit; text-decoration: none; }
+.markdown-preview[data-use-github-style] .absent { color: rgb(204, 0, 0); }
+.markdown-preview[data-use-github-style] .anchor { position: absolute; top: 0px; left: 0px; display: block; padding-right: 6px; padding-left: 30px; margin-left: -30px; }
+.markdown-preview[data-use-github-style] .anchor:focus { outline: none; }
+.markdown-preview[data-use-github-style] h1, .markdown-preview[data-use-github-style] h2, .markdown-preview[data-use-github-style] h3, .markdown-preview[data-use-github-style] h4, .markdown-preview[data-use-github-style] h5, .markdown-preview[data-use-github-style] h6 { position: relative; margin-top: 1em; margin-bottom: 16px; font-weight: bold; line-height: 1.4; }
+.markdown-preview[data-use-github-style] h1 .octicon-link, .markdown-preview[data-use-github-style] h2 .octicon-link, .markdown-preview[data-use-github-style] h3 .octicon-link, .markdown-preview[data-use-github-style] h4 .octicon-link, .markdown-preview[data-use-github-style] h5 .octicon-link, .markdown-preview[data-use-github-style] h6 .octicon-link { display: none; color: rgb(0, 0, 0); vertical-align: middle; }
+.markdown-preview[data-use-github-style] h1:hover .anchor, .markdown-preview[data-use-github-style] h2:hover .anchor, .markdown-preview[data-use-github-style] h3:hover .anchor, .markdown-preview[data-use-github-style] h4:hover .anchor, .markdown-preview[data-use-github-style] h5:hover .anchor, .markdown-preview[data-use-github-style] h6:hover .anchor { padding-left: 8px; margin-left: -30px; text-decoration: none; }
+.markdown-preview[data-use-github-style] h1:hover .anchor .octicon-link, .markdown-preview[data-use-github-style] h2:hover .anchor .octicon-link, .markdown-preview[data-use-github-style] h3:hover .anchor .octicon-link, .markdown-preview[data-use-github-style] h4:hover .anchor .octicon-link, .markdown-preview[data-use-github-style] h5:hover .anchor .octicon-link, .markdown-preview[data-use-github-style] h6:hover .anchor .octicon-link { display: inline-block; }
+.markdown-preview[data-use-github-style] h1 tt, .markdown-preview[data-use-github-style] h2 tt, .markdown-preview[data-use-github-style] h3 tt, .markdown-preview[data-use-github-style] h4 tt, .markdown-preview[data-use-github-style] h5 tt, .markdown-preview[data-use-github-style] h6 tt, .markdown-preview[data-use-github-style] h1 code, .markdown-preview[data-use-github-style] h2 code, .markdown-preview[data-use-github-style] h3 code, .markdown-preview[data-use-github-style] h4 code, .markdown-preview[data-use-github-style] h5 code, .markdown-preview[data-use-github-style] h6 code { font-size: inherit; }
+.markdown-preview[data-use-github-style] h1 { padding-bottom: 0.3em; font-size: 2.25em; line-height: 1.2; border-bottom: 1px solid rgb(238, 238, 238); }
+.markdown-preview[data-use-github-style] h1 .anchor { line-height: 1; }
+.markdown-preview[data-use-github-style] h2 { padding-bottom: 0.3em; font-size: 1.75em; line-height: 1.225; border-bottom: 1px solid rgb(238, 238, 238); }
+.markdown-preview[data-use-github-style] h2 .anchor { line-height: 1; }
+.markdown-preview[data-use-github-style] h3 { font-size: 1.5em; line-height: 1.43; }
+.markdown-preview[data-use-github-style] h3 .anchor { line-height: 1.2; }
+.markdown-preview[data-use-github-style] h4 { font-size: 1.25em; }
+.markdown-preview[data-use-github-style] h4 .anchor { line-height: 1.2; }
+.markdown-preview[data-use-github-style] h5 { font-size: 1em; }
+.markdown-preview[data-use-github-style] h5 .anchor { line-height: 1.1; }
+.markdown-preview[data-use-github-style] h6 { font-size: 1em; color: rgb(119, 119, 119); }
+.markdown-preview[data-use-github-style] h6 .anchor { line-height: 1.1; }
+.markdown-preview[data-use-github-style] p, .markdown-preview[data-use-github-style] blockquote, .markdown-preview[data-use-github-style] ul, .markdown-preview[data-use-github-style] ol, .markdown-preview[data-use-github-style] dl, .markdown-preview[data-use-github-style] table, .markdown-preview[data-use-github-style] pre { margin-top: 0px; margin-bottom: 16px; }
+.markdown-preview[data-use-github-style] hr { height: 4px; padding: 0px; margin: 16px 0px; background-color: rgb(231, 231, 231); border: 0px none; }
+.markdown-preview[data-use-github-style] ul, .markdown-preview[data-use-github-style] ol { padding-left: 2em; }
+.markdown-preview[data-use-github-style] ul.no-list, .markdown-preview[data-use-github-style] ol.no-list { padding: 0px; list-style-type: none; }
+.markdown-preview[data-use-github-style] ul ul, .markdown-preview[data-use-github-style] ul ol, .markdown-preview[data-use-github-style] ol ol, .markdown-preview[data-use-github-style] ol ul { margin-top: 0px; margin-bottom: 0px; }
+.markdown-preview[data-use-github-style] li > p { margin-top: 16px; }
+.markdown-preview[data-use-github-style] dl { padding: 0px; }
+.markdown-preview[data-use-github-style] dl dt { padding: 0px; margin-top: 16px; font-size: 1em; font-style: italic; font-weight: bold; }
+.markdown-preview[data-use-github-style] dl dd { padding: 0px 16px; margin-bottom: 16px; }
+.markdown-preview[data-use-github-style] blockquote { padding: 0px 15px; color: rgb(119, 119, 119); border-left: 4px solid rgb(221, 221, 221); }
+.markdown-preview[data-use-github-style] blockquote > :first-child { margin-top: 0px; }
+.markdown-preview[data-use-github-style] blockquote > :last-child { margin-bottom: 0px; }
+.markdown-preview[data-use-github-style] table { display: block; width: 100%; overflow: auto; word-break: keep-all; }
+.markdown-preview[data-use-github-style] table th { font-weight: bold; }
+.markdown-preview[data-use-github-style] table th, .markdown-preview[data-use-github-style] table td { padding: 6px 13px; border: 1px solid rgb(221, 221, 221); }
+.markdown-preview[data-use-github-style] table tr { background-color: rgb(255, 255, 255); border-top: 1px solid rgb(204, 204, 204); }
+.markdown-preview[data-use-github-style] table tr:nth-child(2n) { background-color: rgb(248, 248, 248); }
+.markdown-preview[data-use-github-style] img { max-width: 100%; box-sizing: border-box; }
+.markdown-preview[data-use-github-style] .emoji { max-width: none; }
+.markdown-preview[data-use-github-style] span.frame { display: block; overflow: hidden; }
+.markdown-preview[data-use-github-style] span.frame > span { display: block; float: left; width: auto; padding: 7px; margin: 13px 0px 0px; overflow: hidden; border: 1px solid rgb(221, 221, 221); }
+.markdown-preview[data-use-github-style] span.frame span img { display: block; float: left; }
+.markdown-preview[data-use-github-style] span.frame span span { display: block; padding: 5px 0px 0px; clear: both; color: rgb(51, 51, 51); }
+.markdown-preview[data-use-github-style] span.align-center { display: block; overflow: hidden; clear: both; }
+.markdown-preview[data-use-github-style] span.align-center > span { display: block; margin: 13px auto 0px; overflow: hidden; text-align: center; }
+.markdown-preview[data-use-github-style] span.align-center span img { margin: 0px auto; text-align: center; }
+.markdown-preview[data-use-github-style] span.align-right { display: block; overflow: hidden; clear: both; }
+.markdown-preview[data-use-github-style] span.align-right > span { display: block; margin: 13px 0px 0px; overflow: hidden; text-align: right; }
+.markdown-preview[data-use-github-style] span.align-right span img { margin: 0px; text-align: right; }
+.markdown-preview[data-use-github-style] span.float-left { display: block; float: left; margin-right: 13px; overflow: hidden; }
+.markdown-preview[data-use-github-style] span.float-left span { margin: 13px 0px 0px; }
+.markdown-preview[data-use-github-style] span.float-right { display: block; float: right; margin-left: 13px; overflow: hidden; }
+.markdown-preview[data-use-github-style] span.float-right > span { display: block; margin: 13px auto 0px; overflow: hidden; text-align: right; }
+.markdown-preview[data-use-github-style] code, .markdown-preview[data-use-github-style] tt { padding: 0.2em 0px; margin: 0px; font-size: 85%; background-color: rgba(0, 0, 0, 0.04); border-radius: 3px; }
+.markdown-preview[data-use-github-style] code::before, .markdown-preview[data-use-github-style] tt::before, .markdown-preview[data-use-github-style] code::after, .markdown-preview[data-use-github-style] tt::after { letter-spacing: -0.2em; content: " "; }
+.markdown-preview[data-use-github-style] code br, .markdown-preview[data-use-github-style] tt br { display: none; }
+.markdown-preview[data-use-github-style] del code { text-decoration: inherit; }
+.markdown-preview[data-use-github-style] pre > code { padding: 0px; margin: 0px; font-size: 100%; word-break: normal; white-space: pre; background: transparent; border: 0px; }
+.markdown-preview[data-use-github-style] .highlight { margin-bottom: 16px; }
+.markdown-preview[data-use-github-style] .highlight pre, .markdown-preview[data-use-github-style] pre { padding: 16px; overflow: auto; font-size: 85%; line-height: 1.45; background-color: rgb(247, 247, 247); border-radius: 3px; }
+.markdown-preview[data-use-github-style] .highlight pre { margin-bottom: 0px; word-break: normal; }
+.markdown-preview[data-use-github-style] pre { overflow-wrap: normal; }
+.markdown-preview[data-use-github-style] pre code, .markdown-preview[data-use-github-style] pre tt { display: inline; max-width: initial; padding: 0px; margin: 0px; overflow: initial; line-height: inherit; overflow-wrap: normal; background-color: transparent; border: 0px; }
+.markdown-preview[data-use-github-style] pre code::before, .markdown-preview[data-use-github-style] pre tt::before, .markdown-preview[data-use-github-style] pre code::after, .markdown-preview[data-use-github-style] pre tt::after { content: normal; }
+.markdown-preview[data-use-github-style] kbd { display: inline-block; padding: 3px 5px; font-size: 11px; line-height: 10px; color: rgb(85, 85, 85); vertical-align: middle; background-color: rgb(252, 252, 252); border-width: 1px; border-style: solid; border-color: rgb(204, 204, 204) rgb(204, 204, 204) rgb(187, 187, 187); border-image: initial; border-radius: 3px; box-shadow: rgb(187, 187, 187) 0px -1px 0px inset; }
+.markdown-preview[data-use-github-style] a { color: rgb(51, 122, 183); }
+.markdown-preview[data-use-github-style] code { color: inherit; }
+.markdown-preview[data-use-github-style] pre.editor-colors { padding: 0.8em 1em; margin-bottom: 1em; font-size: 0.85em; border-radius: 4px; overflow: auto; }
+.markdown-preview pre.editor-colors { user-select: auto; }
+.scrollbars-visible-always .markdown-preview pre.editor-colors .vertical-scrollbar, .scrollbars-visible-always .markdown-preview pre.editor-colors .horizontal-scrollbar { visibility: hidden; }
+.scrollbars-visible-always .markdown-preview pre.editor-colors:hover .vertical-scrollbar, .scrollbars-visible-always .markdown-preview pre.editor-colors:hover .horizontal-scrollbar { visibility: visible; }
+.markdown-preview .task-list-item input[type="checkbox"] { position: absolute; margin: 0.25em 0px 0px -1.4em; }
+.markdown-preview .task-list-item { list-style-type: none; }
+.bracket-matcher .region {
+  border-bottom: 1px dotted lime;
+  position: absolute;
+}
+.line-number.bracket-matcher.bracket-matcher {
+  color: #002b36;
+  background-color: #dfd4b1;
+}
+
+.spell-check-misspelling .region {
+  border-bottom: 2px dotted rgba(255, 51, 51, 0.75);
+}
+.spell-check-corrections {
+  width: 25em !important;
+}
+
+pre.editor-colors {
+  color: #657b83;
+  background-color: #fdf6e3;
+}
+pre.editor-colors .gutter {
+  color: #657b83;
+  background-color: #eee8d5;
+}
+pre.editor-colors .gutter .line-number.cursor-line {
+  background-color: #dfd4b1;
+}
+pre.editor-colors .invisible-character {
+  color: #dcd0a9;
+}
+pre.editor-colors .indent-guide {
+  color: #dcd0a9;
+}
+pre.editor-colors .cursor {
+  border-color: #002b36;
+}
+pre.editor-colors .cursor-line {
+  background-color: rgba(243, 200, 84, 0.15);
+}
+pre.editor-colors .selection .region {
+  background-color: #eee8d5;
+}
+pre.editor-colors .fold-marker:after,
+pre.editor-colors .gutter .line-number.folded {
+  color: #d33682;
+}
+pre.editor-colors .bracket-matcher .region {
+  border-color: #d33682;
+}
+.syntax--comment {
+  color: #93a1a1;
+  font-style: italic;
+}
+.syntax--comment .syntax--markup.syntax--link {
+  color: #93a1a1;
+}
+.syntax--string {
+  color: #2aa198;
+}
+.syntax--string.syntax--regexp {
+  color: #dc322f;
+}
+.syntax--constant.syntax--numeric {
+  color: #d33682;
+}
+.syntax--constant.syntax--language {
+  color: #b58900;
+}
+.syntax--constant.syntax--character,
+.syntax--constant.syntax--other,
+.syntax--constant.syntax--support {
+  color: #cb4b16;
+}
+.syntax--variable {
+  color: #268bd2;
+}
+.syntax--keyword {
+  color: #859900;
+}
+.syntax--storage {
+  color: #859900;
+}
+.syntax--meta.syntax--class {
+  color: #268bd2;
+}
+.syntax--entity.syntax--name.syntax--class,
+.syntax--entity.syntax--name.syntax--function,
+.syntax--entity.syntax--name.syntax--section,
+.syntax--entity.syntax--name.syntax--type {
+  color: #268bd2;
+}
+.syntax--entity.syntax--other.syntax--attribute-name {
+  color: #657b83;
+}
+.syntax--support.syntax--function {
+  color: #268bd2;
+}
+.syntax--support.syntax--function.syntax--builtin {
+  color: #859900;
+}
+.syntax--support.syntax--type,
+.syntax--support.syntax--class {
+  color: #859900;
+}
+.syntax--tag.syntax--entity.syntax--name {
+  color: #268bd2;
+}
+.syntax--tag.syntax--punctuation.syntax--definition.syntax--html,
+.syntax--tag.syntax--punctuation.syntax--definition.syntax--begin,
+.syntax--tag.syntax--punctuation.syntax--definition.syntax--end {
+  color: #93a1a1;
+}
+.syntax--invalid.syntax--deprecated {
+  color: #b58900;
+  text-decoration: underline;
+}
+.syntax--invalid.syntax--illegal {
+  color: #dc322f;
+  text-decoration: underline;
+}
+.syntax--none {
+  color: #657b83;
+}
+.syntax--source.syntax--c .syntax--meta.syntax--preprocessor,
+.syntax--source.syntax--cpp .syntax--meta.syntax--preprocessor {
+  color: #dc322f;
+}
+.syntax--source.syntax--c .syntax--keyword.syntax--control.syntax--directive,
+.syntax--source.syntax--cpp .syntax--keyword.syntax--control.syntax--directive {
+  color: #cb4b16;
+}
+.syntax--source.syntax--c .syntax--punctuation.syntax--string,
+.syntax--source.syntax--cpp .syntax--punctuation.syntax--string {
+  color: #2aa198;
+}
+.syntax--source.syntax--c .syntax--constant,
+.syntax--source.syntax--cpp .syntax--constant {
+  color: #cb4b16;
+}
+.syntax--source.syntax--c .syntax--constant.syntax--numeric,
+.syntax--source.syntax--cpp .syntax--constant.syntax--numeric,
+.syntax--source.syntax--c .syntax--constant.syntax--language.syntax--c,
+.syntax--source.syntax--cpp .syntax--constant.syntax--language.syntax--c {
+  color: #2aa198;
+}
+.syntax--source.syntax--c .syntax--storage,
+.syntax--source.syntax--cpp .syntax--storage {
+  color: #b58900;
+}
+.syntax--source.syntax--c .syntax--entity,
+.syntax--source.syntax--cpp .syntax--entity {
+  color: #657b83;
+}
+.syntax--source.syntax--c .syntax--entity.syntax--name.syntax--function.syntax--preprocessor,
+.syntax--source.syntax--cpp .syntax--entity.syntax--name.syntax--function.syntax--preprocessor {
+  color: #dc322f;
+}
+.syntax--source.syntax--c .syntax--support.syntax--type,
+.syntax--source.syntax--cpp .syntax--support.syntax--type {
+  color: #b58900;
+}
+.syntax--source.syntax--c .syntax--support.syntax--type.syntax--posix-reserved,
+.syntax--source.syntax--cpp .syntax--support.syntax--type.syntax--posix-reserved {
+  color: #657b83;
+}
+.syntax--source.syntax--c .syntax--variable.syntax--other.syntax--dot-access,
+.syntax--source.syntax--cpp .syntax--variable.syntax--other.syntax--dot-access {
+  color: #657b83;
+}
+.syntax--source.syntax--c .syntax--variable.syntax--parameter.syntax--preprocessor,
+.syntax--source.syntax--cpp .syntax--variable.syntax--parameter.syntax--preprocessor {
+  color: #dc322f;
+}
+.syntax--source.syntax--coffee .syntax--support.syntax--class {
+  color: #859900;
+}
+.syntax--source.syntax--coffee .syntax--variable,
+.syntax--source.syntax--coffee .syntax--entity.syntax--name.syntax--function,
+.syntax--source.syntax--coffee .syntax--entity.syntax--name.syntax--class {
+  color: #268bd2;
+}
+.syntax--source.syntax--coffee .syntax--variable.syntax--parameter.syntax--function {
+  color: #657b83;
+}
+.syntax--source.syntax--coffee .syntax--variable.syntax--other.syntax--readwrite {
+  color: #859900;
+}
+.syntax--source.syntax--coffee .syntax--storage.syntax--type.syntax--function {
+  color: #859900;
+}
+.syntax--source.syntax--coffee .syntax--entity.syntax--name {
+  color: #657b83;
+}
+.syntax--source.syntax--coffee .syntax--meta.syntax--brace.syntax--round,
+.syntax--source.syntax--coffee .syntax--meta.syntax--brace.syntax--square {
+  color: #657b83;
+}
+.syntax--source.syntax--coffee .syntax--meta.syntax--delimiter {
+  color: #657b83;
+}
+.syntax--source.syntax--coffee .syntax--storage.syntax--type.syntax--class {
+  color: #859900;
+}
+.syntax--source.syntax--coffee .syntax--punctuation.syntax--terminator {
+  color: #657b83;
+}
+.syntax--source.syntax--coffee .syntax--punctuation.syntax--section.syntax--embedded {
+  color: #dc322f;
+}
+.syntax--source.syntax--coffee .syntax--embedded.syntax--source {
+  color: #657b83;
+}
+.syntax--source.syntax--coffee .syntax--constant.syntax--numeric {
+  color: #d33682;
+}
+.syntax--source.syntax--coffee .syntax--constant.syntax--language.syntax--boolean {
+  color: #b58900;
+}
+.syntax--source.syntax--css .syntax--punctuation.syntax--separator,
+.syntax--source.syntax--css .syntax--punctuation.syntax--terminator {
+  color: #657b83;
+}
+.syntax--source.syntax--css .syntax--punctuation.syntax--property-list.syntax--begin,
+.syntax--source.syntax--css .syntax--punctuation.syntax--property-list.syntax--end {
+  color: #dc322f;
+}
+.syntax--source.syntax--css .syntax--punctuation.syntax--section.syntax--function {
+  color: #2aa198;
+}
+.syntax--source.syntax--css .syntax--entity.syntax--name {
+  color: #859900;
+}
+.syntax--source.syntax--css .syntax--attribute-name.syntax--class,
+.syntax--source.syntax--css .syntax--id {
+  color: #268bd2;
+}
+.syntax--source.syntax--css .syntax--pseudo-element,
+.syntax--source.syntax--css .syntax--pseudo-class {
+  color: #cb4b16;
+}
+.syntax--source.syntax--css .syntax--property-value {
+  color: #2aa198;
+}
+.syntax--source.syntax--css .syntax--constant.syntax--numeric {
+  color: #2aa198;
+}
+.syntax--source.syntax--css .syntax--constant.syntax--numeric .syntax--unit {
+  color: #2aa198;
+}
+.syntax--source.syntax--css .syntax--rgb-value {
+  color: #2aa198;
+}
+.syntax--source.syntax--css .syntax--support.syntax--constant {
+  color: #2aa198;
+}
+.syntax--source.syntax--css .syntax--support.syntax--constant.syntax--media {
+  color: #dc322f;
+}
+.syntax--source.syntax--css .syntax--keyword.syntax--important {
+  color: #dc322f;
+}
+.syntax--source.syntax--less .syntax--keyword.syntax--unit,
+.syntax--source.syntax--scss .syntax--keyword.syntax--unit {
+  color: #2aa198;
+}
+.syntax--source.syntax--go .syntax--operator {
+  color: #657b83;
+}
+.syntax--source.syntax--go .syntax--operator.syntax--assignment {
+  color: #859900;
+}
+.syntax--source.syntax--java .syntax--keyword.syntax--operator {
+  color: #859900;
+}
+.syntax--source.syntax--java .syntax--keyword.syntax--import {
+  color: #cb4b16;
+}
+.syntax--source.syntax--java .syntax--storage.syntax--modifier.syntax--import {
+  color: #93a1a1;
+}
+.syntax--source.syntax--java .syntax--meta.syntax--class .syntax--storage.syntax--modifier {
+  color: #b58900;
+}
+.syntax--source.syntax--java .syntax--meta.syntax--class .syntax--meta.syntax--class.syntax--identifier .syntax--entity.syntax--name.syntax--type.syntax--class {
+  color: #268bd2;
+}
+.syntax--source.syntax--java .syntax--storage.syntax--type.syntax--primitive.syntax--array {
+  color: #859900;
+}
+.syntax--source.syntax--java .syntax--constant.syntax--numeric {
+  color: #d33682;
+}
+.syntax--source.syntax--java .syntax--constant.syntax--other {
+  color: #cb4b16;
+}
+.syntax--source.syntax--java .syntax--storage.syntax--type {
+  color: #859900;
+}
+.syntax--source.syntax--java .syntax--meta.syntax--method-call {
+  color: #dc322f;
+}
+.syntax--source.syntax--java .syntax--meta.syntax--method-call .syntax--meta.syntax--method {
+  color: #6c71c4;
+}
+.syntax--source.syntax--java .syntax--meta.syntax--method-call .syntax--punctuation.syntax--definition.syntax--seperator.syntax--parameter {
+  color: #859900;
+}
+.syntax--source.syntax--java .syntax--punctuation.syntax--definition.syntax--method-parameters {
+  color: #586e75;
+}
+.syntax--source.syntax--js .syntax--comma {
+  color: #657b83;
+}
+.syntax--source.syntax--js .syntax--support.syntax--class {
+  color: #859900;
+}
+.syntax--source.syntax--js .syntax--entity.syntax--name.syntax--type {
+  color: #b58900;
+}
+.syntax--source.syntax--js .syntax--entity.syntax--name {
+  color: #657b83;
+}
+.syntax--source.syntax--js .syntax--entity.syntax--name.syntax--function {
+  color: #268bd2;
+}
+.syntax--source.syntax--js .syntax--entity.syntax--name.syntax--tag {
+  color: #268bd2;
+}
+.syntax--source.syntax--js .syntax--entity.syntax--other.syntax--attribute-name {
+  color: #b58900;
+}
+.syntax--source.syntax--js .syntax--meta.syntax--brace {
+  color: #657b83;
+}
+.syntax--source.syntax--js .syntax--keyword {
+  color: #657b83;
+}
+.syntax--source.syntax--js .syntax--keyword.syntax--operator.syntax--new {
+  color: #859900;
+}
+.syntax--source.syntax--js .syntax--keyword.syntax--control {
+  color: #cb4b16;
+}
+.syntax--source.syntax--js .syntax--keyword.syntax--control.syntax--regexp {
+  color: #2aa198;
+}
+.syntax--source.syntax--js .syntax--variable {
+  color: #657b83;
+}
+.syntax--source.syntax--js .syntax--variable.syntax--dom {
+  color: #859900;
+}
+.syntax--source.syntax--js .syntax--delimiter + .syntax--dom {
+  color: #657b83;
+}
+.syntax--source.syntax--js .syntax--name {
+  color: #657b83;
+}
+.syntax--source.syntax--js .syntax--variable.syntax--language {
+  color: #268bd2;
+}
+.syntax--source.syntax--js .syntax--variable.syntax--parameter {
+  color: #657b83;
+}
+.syntax--source.syntax--js .syntax--regexp {
+  color: #2aa198;
+}
+.syntax--source.syntax--js .syntax--support.syntax--function {
+  color: #657b83;
+}
+.syntax--source.syntax--js .syntax--support.syntax--constant {
+  color: #657b83;
+}
+.syntax--source.syntax--js .syntax--storage.syntax--modifier {
+  color: #b58900;
+}
+.syntax--source.syntax--js .syntax--punctuation.syntax--terminator.syntax--statement {
+  color: #657b83;
+}
+.syntax--source.syntax--js .syntax--meta.syntax--delimiter.syntax--method.syntax--period {
+  color: #657b83;
+}
+.syntax--source.syntax--js .syntax--meta.syntax--brace.syntax--square {
+  color: #268bd2;
+}
+.syntax--source.syntax--js .syntax--meta.syntax--brace.syntax--curly {
+  color: #268bd2;
+}
+.syntax--source.syntax--js .syntax--string.syntax--quoted.syntax--template .syntax--embedded.syntax--source {
+  color: #657b83;
+}
+.syntax--source.syntax--js .syntax--string.syntax--quoted.syntax--template .syntax--embedded.syntax--source > .syntax--embedded.syntax--punctuation {
+  color: #dc322f;
+}
+.syntax--source.syntax--js.syntax--embedded .syntax--entity.syntax--name.syntax--tag {
+  color: #268bd2;
+}
+.syntax--source.syntax--js .syntax--import .syntax--control {
+  color: #cb4b16;
+}
+.syntax--source.syntax--js.syntax--rails .syntax--instance {
+  color: #268bd2;
+}
+.syntax--source.syntax--js.syntax--rails .syntax--class {
+  color: #b58900;
+}
+.syntax--md .syntax--link .syntax--entity,
+.syntax--gfm .syntax--link .syntax--entity {
+  color: #6c71c4;
+}
+.syntax--md .syntax--list.syntax--ordered,
+.syntax--gfm .syntax--list.syntax--ordered {
+  color: #859900;
+}
+.syntax--md .syntax--list.syntax--unordered,
+.syntax--gfm .syntax--list.syntax--unordered {
+  color: #b58900;
+}
+.syntax--md .syntax--raw,
+.syntax--gfm .syntax--raw {
+  font-style: italic;
+}
+.syntax--md.syntax--support,
+.syntax--gfm.syntax--support {
+  color: #93a1a1;
+}
+.syntax--md.syntax--support.syntax--quote,
+.syntax--gfm.syntax--support.syntax--quote {
+  color: #6c71c4;
+}
+.syntax--markup.syntax--bold {
+  font-weight: bold;
+}
+.syntax--markup.syntax--italic {
+  font-style: italic;
+}
+.syntax--markup.syntax--heading {
+  color: #268bd2;
+}
+.syntax--markup.syntax--link {
+  color: #2aa198;
+}
+.syntax--markup.syntax--deleted {
+  color: #dc322f;
+}
+.syntax--markup.syntax--changed {
+  color: #b58900;
+}
+.syntax--markup.syntax--inserted {
+  color: #2aa198;
+}
+.syntax--source.syntax--php .syntax--storage.syntax--type.syntax--class {
+  color: #b58900;
+}
+.syntax--source.syntax--php .syntax--storage.syntax--type.syntax--function {
+  color: #cb4b16;
+}
+.syntax--source.syntax--php .syntax--storage.syntax--modifier {
+  color: #b58900;
+}
+.syntax--source.syntax--php .syntax--entity.syntax--name.syntax--type.syntax--class {
+  color: #657b83;
+}
+.syntax--source.syntax--php .syntax--entity.syntax--name.syntax--function {
+  color: #657b83;
+}
+.syntax--source.syntax--php .syntax--entity.syntax--other {
+  color: #657b83;
+}
+.syntax--source.syntax--php .syntax--variable {
+  color: #268bd2;
+}
+.syntax--source.syntax--php .syntax--punctuation.syntax--definition {
+  color: #657b83;
+}
+.syntax--source.syntax--php .syntax--punctuation.syntax--definition.syntax--comment {
+  color: #93a1a1;
+}
+.syntax--source.syntax--php .syntax--punctuation.syntax--definition.syntax--array {
+  color: #dc322f;
+}
+.syntax--source.syntax--php .syntax--punctuation.syntax--definition.syntax--string {
+  color: #657b83;
+}
+.syntax--source.syntax--php .syntax--punctuation.syntax--definition.syntax--variable {
+  color: #859900;
+}
+.syntax--source.syntax--php .syntax--support.syntax--function.syntax--construct {
+  color: #b58900;
+}
+.syntax--source.syntax--php .syntax--support.syntax--function.syntax--array {
+  color: #859900;
+}
+.syntax--source.syntax--php .syntax--keyword.syntax--operator.syntax--class {
+  color: #b58900;
+}
+.syntax--source.syntax--php .syntax--keyword.syntax--operator.syntax--assignment {
+  color: #859900;
+}
+.syntax--source.syntax--php .syntax--keyword.syntax--other {
+  color: #dc322f;
+}
+.syntax--source.syntax--python .syntax--entity {
+  color: #657b83;
+}
+.syntax--source.syntax--python .syntax--entity.syntax--name {
+  color: #268bd2;
+}
+.syntax--source.syntax--python .syntax--entity.syntax--other {
+  color: #268bd2;
+}
+.syntax--source.syntax--python .syntax--function {
+  color: #268bd2;
+}
+.syntax--source.syntax--python .syntax--function.syntax--magic {
+  color: #268bd2;
+}
+.syntax--source.syntax--python .syntax--punctuation.syntax--string {
+  color: #2aa198;
+}
+.syntax--source.syntax--python .syntax--keyword.syntax--operator {
+  color: #657b83;
+}
+.syntax--source.syntax--python .syntax--keyword.syntax--operator.syntax--quantifier {
+  color: #2aa198;
+}
+.syntax--source.syntax--python .syntax--keyword.syntax--operator.syntax--logical {
+  color: #859900;
+}
+.syntax--source.syntax--python .syntax--keyword.syntax--control.syntax--import {
+  color: #cb4b16;
+}
+.syntax--source.syntax--python .syntax--keyword.syntax--other {
+  color: #859900;
+}
+.syntax--source.syntax--python .syntax--constant.syntax--language {
+  color: #268bd2;
+}
+.syntax--source.syntax--python .syntax--constant.syntax--character {
+  color: #2aa198;
+}
+.syntax--source.syntax--python .syntax--constant.syntax--other {
+  color: #dc322f;
+}
+.syntax--source.syntax--python .syntax--entity.syntax--name.syntax--type.syntax--class {
+  color: #268bd2;
+}
+.syntax--source.syntax--python .syntax--variable {
+  color: #657b83;
+}
+.syntax--source.syntax--python .syntax--support.syntax--function.syntax--builtin {
+  color: #268bd2;
+}
+.syntax--source.syntax--python .syntax--support.syntax--type.syntax--exception.syntax--python {
+  color: #b58900;
+}
+.syntax--source.syntax--python .syntax--support.syntax--type.syntax--python {
+  color: #268bd2;
+}
+.syntax--source.syntax--python .syntax--storage.syntax--type.syntax--string {
+  color: #2aa198;
+}
+.syntax--source.syntax--python .syntax--storage.syntax--type.syntax--class {
+  color: #859900;
+}
+.syntax--source.syntax--python .syntax--storage.syntax--type.syntax--class.syntax--todo {
+  color: #d33682;
+}
+.syntax--source.syntax--python .syntax--storage.syntax--type.syntax--function {
+  color: #859900;
+}
+.syntax--source.syntax--python .syntax--punctuation.syntax--definition.syntax--parameters {
+  color: #657b83;
+}
+.syntax--source.syntax--python .syntax--punctuation.syntax--section.syntax--function.syntax--begin {
+  color: #657b83;
+}
+.syntax--source.syntax--python .syntax--punctuation.syntax--separator.syntax--parameters {
+  color: #657b83;
+}
+.syntax--source.syntax--ruby .syntax--meta.syntax--embedded .syntax--punctuation.syntax--section {
+  color: #dc322f;
+}
+.syntax--source.syntax--ruby .syntax--punctuation.syntax--definition {
+  color: #657b83;
+}
+.syntax--source.syntax--ruby .syntax--punctuation.syntax--definition.syntax--string {
+  color: #dc322f;
+}
+.syntax--source.syntax--ruby .syntax--punctuation.syntax--definition.syntax--comment {
+  color: #93a1a1;
+}
+.syntax--source.syntax--ruby .syntax--entity.syntax--inherited-class {
+  color: #b58900;
+}
+.syntax--source.syntax--ruby .syntax--variable.syntax--parameter {
+  color: #657b83;
+}
+.syntax--source.syntax--ruby .syntax--variable.syntax--constant {
+  color: #b58900;
+}
+.syntax--source.syntax--ruby .syntax--constant.syntax--boolean {
+  color: #2aa198;
+}
+.syntax--source.syntax--ruby .syntax--instance .syntax--punctuation.syntax--definition {
+  color: #268bd2;
+}
+.syntax--source.syntax--ruby .syntax--class {
+  color: #b58900;
+}
+.syntax--source.syntax--ruby .syntax--class.syntax--control {
+  color: #657b83;
+}
+.syntax--source.syntax--ruby .syntax--module {
+  color: #b58900;
+}
+.syntax--source.syntax--ruby .syntax--require .syntax--keyword.syntax--other.syntax--special-method {
+  color: #cb4b16;
+}
+.syntax--source.syntax--ruby .syntax--keyword.syntax--other.syntax--special-method {
+  color: #cb4b16;
+}
+.syntax--source.syntax--ruby .syntax--keyword.syntax--other {
+  color: #859900;
+}
+.syntax--source.syntax--ruby .syntax--keyword.syntax--control {
+  color: #859900;
+}
+.syntax--source.syntax--ruby .syntax--keyword.syntax--operator {
+  color: #657b83;
+}
+.syntax--source.syntax--ruby .syntax--special-method {
+  color: #268bd2;
+}
+.syntax--source.syntax--ruby .syntax--symbol {
+  color: #2aa198;
+}
+.syntax--source.syntax--ruby .syntax--symbol .syntax--punctuation.syntax--definition {
+  color: #2aa198;
+}
+.syntax--source.syntax--ruby .syntax--hashkey {
+  color: #dc322f;
+}
+.syntax--source.syntax--ruby .syntax--hashkey .syntax--punctuation.syntax--definition {
+  color: #dc322f;
+}
+.syntax--source.syntax--ruby .syntax--string.syntax--regexp {
+  color: #dc322f;
+}
+.syntax--source.syntax--ruby .syntax--todo {
+  color: #d33682;
+}
+.syntax--source.syntax--ruby .syntax--variable.syntax--ruby.syntax--global {
+  color: #268bd2;
+}
+.syntax--source.syntax--ruby .syntax--variable.syntax--ruby.syntax--global .syntax--punctuation {
+  color: #268bd2;
+}
+.syntax--source.syntax--ruby .syntax--variable.syntax--block {
+  color: #268bd2;
+}
+.syntax--source.syntax--ruby .syntax--variable.syntax--self {
+  color: #2aa198;
+}
+.syntax--source.syntax--ruby .syntax--punctuation.syntax--separator {
+  color: #657b83;
+}
+.syntax--source.syntax--ruby .syntax--numeric {
+  color: #2aa198;
+}
+.syntax--source.syntax--ruby .syntax--punctuation.syntax--section.syntax--regexp {
+  color: #dc322f;
+}
+.syntax--source.syntax--ruby .syntax--string.syntax--interpolated {
+  color: #2aa198;
+}
+.syntax--source.syntax--ruby .syntax--string.syntax--interpolated .syntax--embedded.syntax--line.syntax--ruby .syntax--punctuation .syntax--source.syntax--ruby {
+  color: #dc322f;
+}
+.syntax--source.syntax--ruby .syntax--string.syntax--interpolated .syntax--embedded.syntax--line.syntax--ruby .syntax--source.syntax--ruby {
+  color: #657b83;
+}
+.syntax--source.syntax--ruby .syntax--string.syntax--interpolated .syntax--embedded.syntax--line.syntax--ruby .syntax--source.syntax--ruby .syntax--punctuation.syntax--array,
+.syntax--source.syntax--ruby .syntax--string.syntax--interpolated .syntax--embedded.syntax--line.syntax--ruby .syntax--source.syntax--ruby .syntax--punctuation.syntax--function {
+  color: #657b83;
+}
+.syntax--source.syntax--ruby .syntax--support.syntax--function {
+  color: #657b83;
+}
+.syntax--source.syntax--ruby .syntax--support.syntax--function.syntax--kernel {
+  color: #859900;
+}
+.syntax--source.syntax--scala .syntax--variable {
+  color: #586e75;
+}
+.syntax--source.syntax--scala .syntax--declaration {
+  color: #586e75;
+  font-weight: bold;
+}
+.syntax--source.syntax--scala .syntax--comparison {
+  color: #586e75;
+}
+.syntax--source.syntax--scala .syntax--class,
+.syntax--source.syntax--scala .syntax--type {
+  color: #b58900;
+}
+.syntax--source.syntax--scala .syntax--val {
+  font-weight: normal;
+}
+.syntax--source.syntax--scala .syntax--variable {
+  font-weight: bold;
+}
+.syntax--source.syntax--scala .syntax--variable.syntax--parameter {
+  color: #6c71c4;
+  font-weight: normal;
+}
+.syntax--source.syntax--scala .syntax--control.syntax--flow {
+  color: #586e75;
+  font-weight: bold;
+}
+.syntax--source.syntax--scala .syntax--constant.syntax--language {
+  color: #586e75;
+  font-weight: bold;
+}
+.syntax--source.syntax--scala .syntax--function.syntax--declaration {
+  color: #6c71c4;
+}
+.syntax--source.syntax--scala .syntax--modifier.syntax--other {
+  font-weight: bold;
+}
+.syntax--source.syntax--scala .syntax--package {
+  color: #586e75;
+}
+.syntax--source.syntax--scala .syntax--variable.syntax--import {
+  font-weight: normal;
+}
+.syntax--source.syntax--scala .syntax--type .syntax--bounds,
+.syntax--source.syntax--scala .syntax--type .syntax--class {
+  color: #6c71c4;
+}
+.syntax--source.syntax--scala .syntax--documentation :not(.syntax--embedded).syntax--link.syntax--entity {
+  color: #268bd2;
+  text-decoration: underline;
+}
+.syntax--source.syntax--scala .syntax--documentation :not(.syntax--embedded) .syntax--class,
+.syntax--source.syntax--scala .syntax--documentation :not(.syntax--embedded) .syntax--parameter {
+  color: #586e75;
+}
+.syntax--source.syntax--scala .syntax--documentation :not(.syntax--embedded) .syntax--description {
+  color: #93a1a1;
+}
+.syntax--source.syntax--scala .syntax--embedded {
+  color: #374549;
+  font-style: italic;
+}
+.syntax--source.syntax--scala .syntax--embedded .syntax--margin,
+.syntax--source.syntax--scala .syntax--embedded .syntax--delimiters {
+  font-style: normal;
+}
+.syntax--source.syntax--ts .syntax--import .syntax--control,
+.syntax--source.syntax--tsx .syntax--import .syntax--control {
+  color: #cb4b16;
+}
+.syntax--source.syntax--ts .syntax--entity.syntax--name.syntax--type,
+.syntax--source.syntax--tsx .syntax--entity.syntax--name.syntax--type {
+  color: #b58900;
+}
+.syntax--source.syntax--ts .syntax--entity.syntax--inherited-class,
+.syntax--source.syntax--tsx .syntax--entity.syntax--inherited-class {
+  color: #b58900;
+}
+.syntax--source.syntax--ts .syntax--support.syntax--type,
+.syntax--source.syntax--tsx .syntax--support.syntax--type {
+  color: #b58900;
+}
+</style>
+        </head>
+        <body class='markdown-preview' data-use-github-style><h1 id="curriculum-vita">Curriculum Vita</h1>
+<h2 id="bryan-murley">Bryan Murley</h2>
+<ul>
+<li>Associate Professor<ul>
+<li>Division of Journalism<ul>
+<li>School of Communication and Journalism<ul>
+<li>Eastern Illinois University</li>
+<li>600 Lincoln Ave.</li>
+<li>217-581-6003</li>
+<li>Charleston, IL 61920</li>
+<li>E-mail: <a href="mailto:bsmurley@eiu.edu">bsmurley@eiu.edu</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h2 id="education">EDUCATION</h2>
+<ul>
+<li>Studies toward B.F.A. – 2D Studio Art, 2016-present: Eastern Illinois University, Charleston, IL.</li>
+<li>Doctoral studies, Mass Communication, 2003-2009: University of South Carolina – Columbia, S.C., Cognate: Library and Information Science. Dissertation proposal: A Semantic Network Analysis of Emerging Church Movement Weblogs</li>
+<li>M.A., Communication, 2001: Southwestern Baptist Theological Seminary - Fort Worth, Texas
+Thesis: <em>Facades of God: A Traveler's Journey</em> - Photographs of churches along U.S. 69 in Texas with accompanying text and graphic design.</li>
+<li>B.S., Communication, 1995: Lamar University - Beaumont, Texas Emphasis: Print Journalism</li>
+</ul>
+<h2 id="academic-positions">ACADEMIC POSITIONS</h2>
+<ul>
+<li><p>2007-present : Tenure Track</p>
+<ul>
+<li><p>Eastern Illinois University, Charleston, IL</p>
+</li>
+<li><p>2013-present: Associate Professor</p>
+<ul>
+<li>Teach courses in online news and multimedia reporting skills, news literacy, social media and journalism ethics in ACEJMC-accredited journalism program. Participate in departmental and university activities pursuant to the rank of associate professor. Engage in research and creative interests to better train future citizens to think critically about the world around them.</li>
+</ul>
+</li>
+<li><p>2007-2013: Tenure-Track Assistant Professor</p>
+<ul>
+<li>Directed New and Emerging Media Concentration and advised Pacemaker-winning online news site dennews.com in ACEJMC-accredited journalism department.</li>
+<li>Taught courses in online news and multimedia reporting skills. Advised students in department majors and serve on various committees, including the university-wide academic iTunes U exploratory committee, and the departmental curriculum and technology committees.</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p>2006-2007: Online News Adviser/Tenure-Track Faculty</p>
+<ul>
+<li>Emory &amp; Henry College, Emory, VA<ul>
+<li>Advised the student news website, EHCWired.com, taught classes in the mass communications department, participated in faculty activities, and advised students in mass communications department.</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p>2001-2006: Student Publications Advisor/Instructor</p>
+<ul>
+<li>North Greenville College, Tigerville, S.C.<ul>
+<li>Advised four student publications (annual, newspaper, literary magazine and online news site), taught classes in journalism and mass communications, participated in faculty committees, and advised students in Mass Communication Department. Provided graphic design and advise on department publications and promotional materials, and maintained Macintosh computer lab and student publications computers.</li>
+</ul>
+</li>
+</ul>
+<ul>
+<li>2000-2001: Adjunct Professor<ul>
+<li>Dallas Baptist University, College of Fine Arts and Communication<ul>
+<li>Taught Photography I and Photography II.</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h2 id="professional">PROFESSIONAL</h2>
+<p>•    2018-2020: Lead partner, Coles Artists Collective, LLC</p>
+<ul>
+<li><p>Cooperate with two partners in creating Gallery 619, a storefront art gallery and studio in Charleston, Ill. Duties include managing web and social media profiles, scheduling, sales and promotion, operation and production of artistic materials for sale. Venture was hobbled by pandemic of 2020 and subsequent social restrictions.</p>
+</li>
+<li><p>Photographer/Newsletter editor, Southwestern Baptist Theological Seminary (1999-2001);</p>
+</li>
+<li><p>Classified Special Sections Writer/Designer, Fort Worth Star-Telegram (1998-1999);</p>
+</li>
+<li><p>Editor, The Hometown Press, Winnie, Texas (1992-1996);</p>
+</li>
+<li><p>Features writer, Beaumont (Texas) Enterprise (1989-1990).</p>
+</li>
+</ul>
+<h2 id="other">OTHER</h2>
+<ul>
+<li>2012-2014: Lead blogger, Innovation in College Media Weblog (archived copy here: innovationincollegemedia.wordpress.com).</li>
+<li>2006-2012: Director for Innovation, Center for Innovation in College Media, Nashville, Tenn.<ul>
+<li>Responsible for innovation initiatives, maintaining weblog, conference planning, research projects, and overall vision for non-profit think-tank promoting new media efforts in college media environments.</li>
+</ul>
+</li>
+<li>2010-2015: Assistant Director, Mid-America Press Institute.<ul>
+<li>Responsible for web site maintenance, managing student journalists and assisting with workshop planning, promotion and on-site implementation.</li>
+</ul>
+</li>
+</ul>
+<h2 id="publications-and-presentations">PUBLICATIONS AND PRESENTATIONS</h2>
+<ul>
+<li>Books<ul>
+<li>Journalism as Artistic Creation (tentative title), in process.</li>
+</ul>
+</li>
+<li>Curriculum-Related<ul>
+<li>New Course Proposal, JOU 3750 – Social Media Engagement, adopted 2019.</li>
+<li>New Journalism Minor proposal – Social Media Engagement, adopted 2019.</li>
+<li>New Course Proposal, with Dr. Ensung Kim, JOU 1000 – News, Information and Media Literacy – General Education Course, writing intensive, Adopted 2014.</li>
+<li>New Course Proposal, JOU 3002 – Introduction to Multimedia Journalism, adopted 2008.</li>
+<li>New Course Proposal, JOU 3703 – Online Journalism, adopted 2008.
+Invited Media Appearances<ul>
+<li>"Issues and Attitudes," WEIU-FM, public affairs program, April 8, 2019. Topics: Media literacy, John Peter Altgeld, Road Scholars Program, Social Media use.</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Blogs, Web Related<ul>
+<li>Writer/Designer, "Illinois is a Meme," series about the Illinois State budget crisis on -  Medium.com (<a href="https://medium.com/@bmurley">https://medium.com/@bmurley</a>), 2016.</li>
+<li>Publisher/Editor, Coles County Rocks, colescountyrocks.com, 2014-15</li>
+<li>Weblog writing/design/editing – Innovation in College Media (<a href="http://www.collegemediainnovation.org/blog">http://www.collegemediainnovation.org/blog</a>), 2006-2014<ul>
+<li>College Media Podcast, weekly, with Dan Reimold, 2012-2014.</li>
+<li>College media correspondent, PBS MediaShift weblog (<a href="http://www.mediashift.org">http://www.mediashift.org</a>). 2008-2010.</li>
+<li>Web site design/editing/writing - Reinventing College Media (<a href="http://reinventing.collegemedia.org">http://reinventing.collegemedia.org</a>), 2005-2006.</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Articles &amp; Book Chapters<ul>
+<li>"Rauner Op-Ed Just More of Same Message," op-ed, State Journal-Register, Springfield, Ill., April 13, 2016. <a href="http://www.sj-r.com/opinion/20160413/bryan-murley-rauner-op-ed-just-more-of-same-message">http://www.sj-r.com/opinion/20160413/bryan-murley-rauner-op-ed-just-more-of-same-message</a></li>
+<li>Data Journalism, Chapter in Journalism of Ideas: Brainstorming, Developing, and Selling Story Ideas in the Digital Age, by Dan Reimold, Taylor &amp; Francis, 2013.</li>
+<li>Weblogs: Democratizing Media Production, Chapter in Understanding Media Convergence, Augie Grant and Jeff Wilkinson, eds., Oxford University Press, 2008.</li>
+<li>Podcasting How-To, Communication: Journalism Education Today, Summer 2007, publication of the Journalism Education Association.</li>
+<li>Legal and Ethical Issues in Online News, Keeping Free Presses Free, publication of College Media Advisers, Inc., 2006, 2007, and 2008</li>
+<li>Avoiding motivational mess-ups, College Media Review, Summer/Fall 2004</li>
+<li>Crossing over: Avoid switching from Mac to PC, but you can live with it if you must, College Media Review, Spring 2003</li>
+<li>Other writing for: Southwestern News, Baptist Press, Texas Baptist Standard, Fort Worth (Texas) Star-Telegram, The Hometown Press, Beaumont (Texas) Enterprise</li>
+</ul>
+</li>
+<li>Conference Papers<ul>
+<li>A Semantic Network Analysis Of The Interpretive Community Of Emerging Church Weblogs - Convergence and Society: Ethics, Religion and New Media Conference, University of South Carolina, Oct. 19-21, 2006.</li>
+<li>Biting the Hand that Feeds: Blogs and second-level agenda setting, with Chris Roberts (Murley presenting), Southern Political Science Association, Atlanta, 2006.</li>
+<li>The Mediahood of All Receivers: New Media, New ‘Church’ and New Challenges, “After Evangelicalism” Second Annual Civitas Conference, Cornerstone University, Grand Rapids, Mich., 2005.</li>
+<li>Biting the Hand that Feeds: Blogs and second-level agenda setting, with Chris Roberts, Convergence Conference, BYU, 2005.</li>
+<li>Bloggers Strike a Nerve: Examining the intersection of blogging and journalism, with Kim Smith, Media Ethics Division, AEJMC Convention, San Antonio, 2005.</li>
+<li>The Mediahood of All Receivers: Blogging as an extension of the Reformation concept of the Priesthood of All Believers, Conference on Communication and Faith, Campbell University, Buies Creek, N.C., 2005.</li>
+<li>Dueling Southern Baptist Press Agencies: An Examination of Coverage of Denominational Controversies by Baptist Press and Associated Baptist Press, Religion and Media Interest Group, AEJMC convention, Toronto, 2004.</li>
+</ul>
+</li>
+<li>Presentations<ul>
+<li>Sifting Through The Ashes of Truth: Altgeld, the press, and the Internet's fake news conundrum, Roads Scholar Presentation, Waubansee Community College, October, 2019.</li>
+<li>Lighting and Capturing High-Resolution Portfolio Images for Works of Art, Invited In-class presentation, Drawing II, Professor Jenny Chi, Spring 2017.</li>
+<li>Mobile Technologies for In-Class Brief Memory Retrieval, Faculty Summer Institute, Champaign, IL, May 24, 2017.</li>
+<li>Getting, Maintaining a Web Presence, Illinois Community College Journalism Association, Charleston, IL, Fall, 2013-2018.</li>
+<li>Getting’ Digi With It, ICPA spring conference, Chicago, IL, Feb. 2015</li>
+<li>Gettin’ Digi With It, ACP/CMA National College Media Convention, November 2013.</li>
+<li>You™: Getting noticed in the new media hiring landscape, ACP/CMA National College Media Convention, November 2012.</li>
+<li>Digital Tectonics, Scholar’s Symposia presentation, University of Tampa, October, 2012.</li>
+<li>Getting, Maintaining a Web Presence and How to Use Twitter Effectively, Illinois Community College Journalism Association, Charleston, IL, Sept. 2012.</li>
+<li>Teaching in the Quickly Changing Digital Age, panel presentation, Society of News Design Annual Workshop, St. Louis, MO, Sept. 2011.</li>
+<li>Getting, Maintaining a Web Presence, Illinois Community College Journalism Association, Charleston, IL, Sept. 2011.</li>
+<li>Free online tools for educators, Illinois Press Foundation Teacher’s Workshop, Springfield, IL, June 2011.</li>
+<li>Better Short Form Video, APME/MPI NewsTrain, Madison, WI, April 2011.</li>
+<li>Free online tools for journalists, College Media Advisers National Convention, Louisville, KY, Oct. 2010.</li>
+<li>Free online tools for educators, Illinois Press Foundation Teacher’s Workshop, Springfield, IL, July 2010.</li>
+<li>Basics of Blogging, Canadian University Press National Conference, Edmonton, Alberta, Jan. 2010.</li>
+<li>What Makes a Rich Website, Canadian University Press National Conference, Edmonton, Alberta, Jan. 2010.</li>
+<li>Social Media Promotion, Canadian University Press National Conference, Edmonton, Alberta, Jan. 2010.</li>
+<li>First Amendment Goes Online, and Defining What’s Good in Digital Journalism (panel participant), ACP/CMA National College Media Convention, Austin, TX, Oct. 2009.</li>
+<li>When to do what with the news, MPI/APME NewsTrain, St. Louis, March, 2009.</li>
+<li>Ways to Soup Up Your Web Site Today, Social Networking, and Do It Live: Liveblogging/Livestreaming, ACP National College Journalism Convention, San Diego, CA, Feb., 2009.</li>
+<li>Successful Blogging and Tools to Build a Rockin’ Web Site, Illinois College Press Association Convention, Chicago, Feb., 2009.</li>
+<li>The Future of Copyediting, panel moderator, Mid-America Press Institute workshop, St. Louis, MO, Dec., 2008.</li>
+<li>First Amendment Issues in Online News, College Media Advisers National Convention, Kansas City, MO, Oct., 2008.</li>
+<li>Blogging for Advisers, College Media Advisers National Convention, Kansas City, MO, Oct. 2008.</li>
+<li>First Amendment Online, College Media Advisers National Convention, Washington DC, Oct. 2007.</li>
+<li>Keynote Speaker, Iowa College Media Association Conference, Jan., 2008.</li>
+<li>Getting a Web Presence and Keeping It, Illinois Community College Journalism Association Conference, Charleston, IL, Oct. 2007 and Oct. 2008.</li>
+<li>Helping Student Think Like Disruptive Innovators: Mindsets and Applications, teaching panel, AEJMC, Washington DC, 2007.</li>
+<li>Shifting Mindsets: College Media Adjusts to New Challenges, Issues facing college media panel, AEJMC, Washington DC, 2007.</li>
+<li>•    Virginia Tech: How others covered on other campuses and resources for online news, Management Seminar for College Newspaper Editors, University of Georgia, 2007.</li>
+<li>Advice from Advisers, panel presentation, Management Seminar for College Newspaper Editors, University of Georgia, 2007.</li>
+<li>Introductory presentation “The ABCs of Web 2.0”, CMA/CICM new media workshop, during CMA National College Media Convention, 2007.</li>
+<li>Canadian University Press Convention, two sessions on digital changes for college media, Vancouver BC, 2007.</li>
+<li>Legal issues in cyberspace, CMA Fall Convention, St. Louis, 2006.</li>
+<li>First Amendment and Convergence round-table participant, CMA First Amendment Workshop, Nashville, Tenn., 2006.</li>
+<li>Convergence using open-source software, presentation with Chris Roberts, Media Convergence Conference, BYU, 2005.</li>
+<li>Blogging, Politics and the Academy, Panel participant, Alabama Political Science Association, Jacksonville State University, Alabama, 2005.</li>
+<li>Doing the Blog: Elemental Advice on Blogging for Student Media, presentation, CMA/ACP Convention - Kansas City, 2005.</li>
+<li>Going Online at Church-Related Schools, presentation, CMA Convention - New York, 2005, CMA/ACP Convention - Kansas City, 2005.</li>
+<li>First Amendment Colloquium, panel participant, Toccoa Falls College, 2004.</li>
+<li>Online Newspapers, panel participant, CMA Convention - New York, 2004.</li>
+</ul>
+</li>
+</ul>
+<h2 id="workshops--consultations">Workshops &amp; Consultations</h2>
+<ul>
+<li>Multimedia trainer, Illinois Press Association/EIU High School Journalism Workshop, Charleston, IL, summer, 2010, 2013-present.</li>
+<li>Faculty Multimedia Training Workshop, Western Illinois University, Macomb, IL, Nov., 2014.</li>
+<li>Washington Colleges Multimedia Workshop/Consultation, Pierce Community College, Tacoma, Wash., November 2012.</li>
+<li>Lead presenter, Illinois Journalism Education Association Educator’s Workshop, Chicago, IL, October, 2011.</li>
+<li>Lead presenter, Illinois Journalism Education Association Educator’s Workshop, Charleston, IL, March, 2011.</li>
+<li>Program coordinator, CICM “Main Street Stories” Project, CMA/ACP Fall National College Media Convention, Louisville, Ky, Oct., 2010.</li>
+<li>Lead presenter, Illinois Press Foundation/Illinois Journalism Education Association/EIU High School Journalism Educators Multimedia Workshop, Charleston, IL, Sept. 2010.</li>
+<li>Online director, Illinois Press Association/EIU High School Journalism Workshop, Charleston, IL, June, 2010.</li>
+<li>Iowa Press Foundation Leo Mores Newspaper Leadership Institute, Grand Rapids, IA, June 2010.</li>
+<li>Multimedia Short Course, ACP National College Journalism Convention, Phoenix, AZ, Feb. 2010</li>
+<li>Multimedia Workshop/Consultation, Texas Tech University, Lubbock, TX, Feb. 2010.</li>
+<li>Student Coverage manager, Mid-America Press Institute/Associated Press Managing Editors NewsTrain, Norman, OK, Sept., 2009.</li>
+<li>Illinois Journalism Education Association Educator’s Workshop, Arlington Heights, IL, Sept. 2009.</li>
+<li>Multimedia Short Course, ACP Summer Journalism Workshop, Minneapolis, MN, July 2009.</li>
+<li>Online director, Illinois Press Association/EIU High School Journalism Workshop, Charleston, IL, July, 2009.</li>
+<li>Multimedia Short Course, ACP National College Journalism Convention, San Diego, CA, Feb. 2009.</li>
+<li>Multimedia Workshop, Bowling Green State University BGNews, Nov., 2008.</li>
+<li>Multimedia Workshop, University of Pittsburgh Pitt News, Oct., 2008.</li>
+<li>Workshop faculty, Management Seminar for College Newspaper Editors, University of Georgia, July 2008.</li>
+<li>Online director, Illinois Press Association/EIU High School Journalism Workshop, Charleston, IL, June, 2008.</li>
+<li>New Media Consultation, Miami University of Ohio, Nov., 2007.</li>
+<li>New Media consultation, Washington University Student Media, St. Louis, Oct. 2007.</li>
+<li>New Media Consultation, Educational Media Company at Va. Tech. Intensive consultation with student journalists and advisers at Va. Tech student media about new media integration into news process. 2007 – one week prior to Va. Tech shooting tragedy.</li>
+<li>CICM New Media Workshop, Nashville, Tenn.. Secured workshop speakers, helped plan curriculum and coordinate planning and execution of 2-day hands-on workshop for college media advisers and student journalists. 2007.</li>
+<li>Nebraska new media workshop for University of Nebraska student publications, Creighton University, and Doane College student media, 2007.</li>
+<li>New Media Workshop, New Mexico State University Student Media – presented a two-day training workshop on new technology and media to student media staff at NMSU, 2006.</li>
+<li>Advising Students in a Wireless World, Washington, DC, for College Media Advisers - primary organizer and presenter for two-day workshop on new media and technology, 2006, with Rob Pongsajapan, Chris Carroll, and Ralph Braseth.</li>
+<li>Participant storybuilder in Newsplex at USC election primary moblog experiment, 2004.</li>
+</ul>
+<h2 id="academic-service-experience">ACADEMIC SERVICE EXPERIENCE</h2>
+<ul>
+<li><p>Eastern Illinois University:</p>
+<ul>
+<li>Title IX Hearing Panel, 2020</li>
+<li>•    EIU-UPI Executive Assistant (elected office) 2019-2020</li>
+<li>EIU-UPI department representative, 2016-2019.</li>
+<li>EIU-UPI Media Relations Committee, 2017-2019.</li>
+<li>EIU-UPI, mobilization committee, 2016-2017.</li>
+<li>School of Communication Studies and Journalism, Bylaws Draft Committee and DAC Revision Committee, 2018-19.</li>
+<li>Departmental Personnel Committee, Journalism department, 2017-present, chair, 2020-21.</li>
+<li>Assessment Committee, journalism department, 2009-present.</li>
+<li>Accreditation Subcommittees – Diversity and Assessment, journalism department, 2010-2011.</li>
+<li>Union Advisory Board, CAH representative, 2011-2012.</li>
+<li>College of Arts and Humanities Faculty Advisory Committee, 2010-present.</li>
+<li>TEAM Grants Council, 2010-present.</li>
+<li>Curriculum Committee, journalism department, 2007-2008.</li>
+<li>Technology Committee, journalism department, 2007-present (chair, 2008-present).</li>
+<li>Academic iTunesU exploratory committee, 2008.</li>
+<li>Student Government External Relations committee, 2008.</li>
+</ul>
+</li>
+<li><p>Emory &amp; Henry College:</p>
+<ul>
+<li>Curriculum revision participant, Department of Mass Communications – 2006-2007.</li>
+</ul>
+</li>
+<li><p>North Greenville College/University:</p>
+<ul>
+<li>Secretary, Faculty Development Committee, 2001</li>
+<li>Chair, Faculty Development Committee, 2002</li>
+<li>Member, Institutional Advancement Committee, 2005</li>
+<li>Curriculum revision participant, North Greenville College Department of Mass Communication – 2005-2006.</li>
+</ul>
+</li>
+</ul>
+<h2 id="honors-and-awards">HONORS AND AWARDS</h2>
+<ul>
+<li>Student Artist In Residence, Henry, Ill., 2018. Four-week residency funded by a grant, participated in two 90-minute art classes for students and developmentally-disabled adults, completed 8 oil paintings, culminated in one-person art show.</li>
+<li>Honorable Mention, Painting, Undergraduate All Student Juried Show, Tarble Arts Center, Eastern Illinois University, 2019.</li>
+<li>Undergraduate All Student Juried Show, Tarble Arts Center, Eastern Illinois University, 2019 – two paintings and one intaglio print accepted.</li>
+<li>Undergraduate All Student Juried Show, Tarble Arts Center, Eastern Illinois University, 2018</li>
+<li>Undergraduate All Student Juried Show, Tarble Arts Center, Eastern Illinois University, 2017</li>
+<li>Best Completed Student Paper Award, Biting the Hand that Feeds: Blogs and second-level agenda setting, with Chris Roberts, Media Convergence Conference, BYU, 2005</li>
+<li>First Place, Graduate Student Day Oral Presentation Award - Communication Division. Who's Your Daddy: Supreme Court Perceptions of the Parent-Child Relationship as They Relate to Technology, 2004</li>
+<li>Second Place, Graduate Student Day Oral Presentation Award - Communication and Language Division, Bloggers Strike a Nerve: Examining the intersection of blogging and journalism, with Kim Smith, 2005</li>
+<li>Second Place, Graduate Student Day Oral Presentation Award - Communication and Technology Division, Biting the Hand that Feeds: Blogs and second-level agenda setting, with Chris Roberts, 2006.</li>
+<li>Mass Communication Department Outstanding Faculty Award, North Greenville College, 2002-2003</li>
+<li>First Place, special automotive publications, lead designer, Inland Press Association, 1999</li>
+<li>Awards for writing, page layout and design and photography from Texas Press Association, 1992-1996.</li>
+</ul>
+<h2 id="professional-memberships">PROFESSIONAL MEMBERSHIPS</h2>
+<ul>
+<li>College Media Advisers, Regular Member, 2001-2014; Webmaster, 2003-2007; Ethics Committee member, 2004-present, online committee, 2004-2006. Convention technology assistant, 2005-2006. Vice President, 2013-2014.</li>
+<li>Association for Education in Journalism and Mass Communication, Regular member, 2001-2005, 2007-2011.</li>
+<li>Online News Association, Regular member, 2007-2010.</li>
+</ul>
+<h2 id="teaching-experience">TEACHING EXPERIENCE</h2>
+<ul>
+<li>Dallas Baptist University - Spring 2000-Summer 2001
+Photography I &amp; II</li>
+<li>North Greenville College/North Greenville University - Fall 2001-Spring 2006
+News and Feature Writing, Advanced News and Feature Writing, Opinion Writing, Graphic Design I and II, Newspaper Practicum, Yearbook Practicum, Interactive Media Practicum, Photography I and II, Photojournalism, Introduction to Mass Communication, Introduction to Print Media, Online Publications, Print Media Marketing and Advertising; Oral Communication, Media Literacy (Honors seminar).</li>
+<li>Emory &amp; Henry College – 2006-2007
+Beginning Publications Design, Advanced Publications Design, Editing the Written Word, Web Journalism</li>
+<li>Tenure-Track Assistant Professor, Eastern Illinois University – 2007-2012
+Introduction to Multimedia Journalism, Advanced New Media Design, Interactive Reporting and Design; Journalism and Democracy; Online Journalism, Freedom of Expression,</li>
+<li>Tenured Associate Professor, Eastern Illinois University – 2013-present
+News and Information Literacy, Journalism Ethics, Social Media, Digital Journalism, Publication Design, Newswriting I.</li>
+</ul>
+<hr>
+<p>Updated: 4-2-21</p></body>
+      </html>
