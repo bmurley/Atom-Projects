@@ -2,7 +2,8 @@
 ### Bryan Murley
 
 1. Ankoku-Butoh
-2. Cultural Revolution
+2. Cultural Revolution: Mao Zedong's attempt to consolidate power over the Chinese political system. Resulted in a multitude of bad effects that continue to dog the world to this day.
+
 3. Gekiga
 4. Gongbi
 5. “Great Leap Forward”

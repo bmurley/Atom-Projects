@@ -14,4 +14,4 @@
   - Completed OCDI training for online teaching.
   - Worked extensively on formatting course content for delivery via online platform.
 - Fall 2020
-  - Participated in normal committee work for school and department.
+- Participated in normal committee work for school and department.
