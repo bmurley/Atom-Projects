@@ -48,3 +48,19 @@ End of the Qing (cheng) empire, western incursions established footholds in main
      - Brother and Sister Open Wasteland, poster print.
      - Exceptional Calligrapher, insisted on quality, symbol of message integrity.
      - He knew the importance of style over substance.
+- Maoist art
+  - Criticism is that CCP artwork repurposed folk traditions without crucial bawdy, humorous tone of the traditions.
+    - Yichuan, To The Front, 1932 - Shen Quan, Pine, Plum and Cranes, 1759, Silk.
+    - Mao rejected passive, pretty aspects of art, as accepting the status quo. All art must be political, but should also be "beautiful/positive"
+    - 1944 Yenan Spring Festival, Yangge (image), repurposed folk dance to new ideology.
+    - Revolutionary lianhuanhua - Mi Gu (1918-1986), Erhei Gets Marrie (1950), Ink on paper - lithography styled to look like woodblock Prints
+      - Chick tracts?
+    - Intellectual Focus
+        - Liu Xun
+          - "Every nationality should have its own characteristic national artistic expression."
+          - "They have discarded the excellent traditions of ethnic line-work that they mastered over many years and decades. They insist on working with a technique of chiascuro shading with which they are not familiar and which is not easily mastered."
+        - Ding Bingzeng (b. 1927) and Han Heping (b. 1932), Railroad Guerillas, 10 volumes, 1954-1962. 36 repaintings, 4 million copies sold.
+          - no shading
+        - Also used with other, more traditional stories.
+          - Zhao Hongben (b. 1915) and Qian Xiaodai (1912-1964), Monkey Beats the White-boned Demon (1962). Ink on paper, based on the novel "Journey to the West", text adapted by Wang Xinbei.
+          - Messaging spread across numerous categories of cultural production.
