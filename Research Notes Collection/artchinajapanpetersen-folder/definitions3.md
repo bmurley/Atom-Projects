@@ -1,3 +1,5 @@
+DUE April 15, 2021 - Turnitin
+
 # TERM LIST
 
 - Ankoku-Butoh
@@ -37,7 +39,7 @@ Definitions Assignment
    4. Be sure to explain how the example suits the term being defined.
    5. Each folder image used must have its correct code.
    6. Each definition should be no less than 75 words and no more than 120 words.
-   
+
 
 - Here is an example of a well-written definition:
    - Shangtuxiawenis anillustrated book format that was first seen in the Chinesepopular pressin the early 1300s. The format was newly printed, fully illustrated popular stories and the upper third of each page was used for illustrations. Publishers started the format in an attempt to appeal to as wide of a populationas possible, both the literate elite and the wideeducated general public. Shangtu xiawen was influential on early Japanese picture stories during the Edo Period and many of the conventions of these picture stories were also used in Japan. ImageE2Q0is an example of shangtu xiawen. In this example itshows how the upper third of each page was dedicated to illustrations, and the bottom two-thirds were devoted to text.
